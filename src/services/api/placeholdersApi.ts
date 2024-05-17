@@ -13,7 +13,7 @@ export const jsonplaceholderApi = createApi({
     getPostsByUserId: builder.query<ICardPost[], number>({
         query: (userId) => `posts?userId=${userId}`,
     }),
-    getMessagesByPostId: builder.query<IComment, number>({
+    getMessagesByPostId: builder.query<IComment[], number>({
       query: (postId) => `comments?postId=${postId}`,
   }),
   }),

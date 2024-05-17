@@ -2,7 +2,7 @@ import { Card, Input } from "antd";
 import { ChangeEvent, FC, useState } from "react";
 import { ICardPost } from "../../interfaces";
 
-const CardPost: FC<ICardPost> = ({title, body}) => {
+const CardPost: FC<Omit<ICardPost, 'id'>> = ({title, body}) => {
     const [ newTitle, setTitle ] = useState<string>(title)
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
