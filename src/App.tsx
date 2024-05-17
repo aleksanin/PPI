@@ -7,7 +7,7 @@ const App: FC = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/users" element={createElement(PageUsers)}/>
+                <Route path="/" element={createElement(PageUsers)}/>
                 <Route path="/messages/:id" element={createElement(MessagesUser)}/>
             </Routes>
         </BrowserRouter>
